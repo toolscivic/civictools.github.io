@@ -21,7 +21,7 @@ url: "http://civic.tools"
 
 title: "Civic Tools"
 
-description: "Proving tools for the people!"
+description: "Providing tools for the people!"
 
 author: "Civic Tools"
 
@@ -46,7 +46,7 @@ sharing-enabled: false
 
 news-enabled: true
 
-submit-enabled: false
+submit-enabled: true
 
 past-events-enabled: false
 
