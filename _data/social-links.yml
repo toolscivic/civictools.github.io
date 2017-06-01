@@ -1,0 +1,11 @@
+- link: toolscivic@gmail.com
+  hover-text: Email Us
+  icon: fa-envelope-square
+
+- link: link-to-twitter-profile-page
+  hover-text: Follow us on Twitter
+  icon: fa-twitter-square
+
+- link: link-to-facebook-page
+  hover-text: Follow us on Facebook
+  icon: fa-facebook-square

@@ -1,0 +1,11 @@
+.DS_Store
+_site
+.sass-cache
+.jekyll-metadata
+
+# Local dev only
+_source_assets
+/node_modules
+/_keep
+package.json
+gulpfile.js

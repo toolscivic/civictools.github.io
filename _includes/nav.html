@@ -1,0 +1,70 @@
+<div role="navigation" class="sidebar">
+
+  <nav class="navbar navbar-toggleable-sm">
+
+    <div class="navbar-toggler navbar-toggler-right" type="text" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span>MENU</span></div>
+
+<!-- do navbar-brand entire as if/else based on logo-enabled:true - resize if only headline
+also fix nav item so border appears under last nav link if there is nothing below it -->
+    <div class="navbar-brand">
+
+      {% for static_file in site.static_files %}
+
+        {% if static_file.path == '/assets/images/header_image_square.png' %}
+
+          <p class="image-block"><a class="nolinkborder" title="Go to home page" href="/"><img class="img-fluid header-image" src="{{site.baseurl}}/assets/images/header_image_square.png"></a></p>
+
+        {% endif %}
+
+      {% endfor %}
+
+      <p class="text-block">{{site.logo-headline}}</p>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav mr-auto">
+
+{% if site.news-enabled == true %}
+  {% for nav in site.data.navigation-news %}
+    <li class="nav-item {% if page.navmenu == nav.link %}active{% endif %}">
+    <a class="nav-link nolinkborder" title="{{nav.hover-text}}" href="{{nav.link}}">{{nav.name}}</a>
+  </li>
+  {% endfor %}
+
+{% else %}
+  {% for nav in site.data.navigation %}
+    <li class="nav-item {% if page.navmenu == nav.link %}active{% endif %}">
+    <a class="nav-link nolinkborder" title="{{nav.hover-text}}" href="{{nav.link}}">{{nav.name}}</a>
+  </li>
+  {% endfor %}
+
+{% endif %}
+
+{% if site.submit-enabled == true %}
+<li class="nav-item nav-item-btn">
+  <button class="btn btn-primary btn-sm waves-effect waves-light" title="Submit an Event" target="_blank" href="">Submit an Event <i class="fa fa-external-link" aria-hidden="true"></i></button>
+</li>
+{% endif %}
+
+{% if site.social-links-enabled == true %}
+  <li class="hidden-sm-down nav-item nav-item-noborder nav-item-icons">
+    {% for social in site.data.social-links %}
+      <a class="icons nolinkborder" title="{{ social.hover-text }}" href="{{ social.link }}">
+        <i class="fa {{ social.icon }}"></i>
+      </a>
+    {% endfor %}
+  </li>
+{% endif %}
+
+<li class="hidden-sm-down nav-item nav-item-noborder">
+  {% include footer.html %}
+</li>
+
+      </ul>
+
+    </div>
+
+  </nav>
+
+</div>

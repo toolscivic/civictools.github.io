@@ -1,0 +1,39 @@
+---
+layout: base
+---
+
+<div id="page">
+
+  <h1 class="page-title">{{ page.title }}</h1>
+
+  <div class="meta-block">
+
+      <div class="meta-subscribe meta-text">
+        {{ content }}
+      </div>
+
+  </div>
+
+  <div class="page-body">
+
+    <ul class="list-news">
+
+    {% for post in site.news reversed %}
+
+      {% if post.type != "index" %}
+
+      <li>
+        <a title="View {{post.title}}" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+
+        <p class="list-news-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }} <a class="" title="Continue reading" href="{{ site.baseurl }}{{ post.url }}">continue&nbsp;reading&nbsp;&raquo;</a></p>
+      </li>
+
+      {% endif %}
+
+    {% endfor %}
+
+    </ul>
+
+  </div>
+
+</div>
