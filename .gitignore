@@ -2,3 +2,7 @@
 _site
 .sass-cache
 .jekyll-metadata
+
+# Local dev only
+/_keep
+_source_assets
