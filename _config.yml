@@ -39,6 +39,7 @@ news-enabled: true
 # ================================
 # Appearance
 # ================================
+theme: minima
 theme-color: default
 font-combo: default
 
