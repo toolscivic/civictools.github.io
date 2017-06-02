@@ -5,7 +5,7 @@
 ---
 @charset "utf-8";
 
-@import "theme_{{site.theme-color}}";
+@import "theme_default.scss";
 @import "font_{{site.font-combo}}";
 @import "application";
 
