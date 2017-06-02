@@ -12,10 +12,6 @@
 
 # ================================
 # Site information
-#
-# SEE THE WIKI PAGE BELOW for information on what each of these settings mean:
-#
-# url
 # ================================
 url: http://civic.tools
 
@@ -25,44 +21,23 @@ description: Providing tools for the people!
 
 author: Civic Tools
 
-sheet-url:
-
 
 
 # ================================
 # Enable/Disable Features
-#
-# SEE THE WIKI PAGE BELOW FOR ACTIONS YOU MUST TAKE WHEN YOU CHANGE THESE OPTIONS:
-#
-# url here
 # ================================
 logo-image-enabled: true
 
-# If not using a logo image ("false" above), provide logo-headline below. Otherwise, leave blank.
-logo-headline: Civic Tools
-
-# The logo-headline uses either the "primary" or "secondary" font family. It is automatically set to the "primary" font family. If you want, you can switch it to the "secondary" font family, just change the value of "logo-headline-switch" to true.
-logo-headline-switch: false
-
-social-links-enabled: true
+social-links-enabled: false
 
 sharing-enabled: false
 
 news-enabled: true
 
-submit-enabled: true
-
-past-events-enabled: false
-
 
 
 # ================================
 # Appearance
-#
-# SEE THE WIKI PAGE BELOW FOR ACTIONS YOU MUST TAKE WHEN YOU CHANGE THESE OPTIONS:
-#
-# url here
-#
 # ================================
 theme-color: default
 font-combo: default
@@ -77,24 +52,19 @@ font-combo: default
 # url here
 #
 # ================================
-stuff: 
+stuff:
 
 
 
 # ================================
-# Article Image Helper - DONT CHANGE THIS
+# Article Image Helper
 # ================================
 article_image: /assets/images/posts
 
 
 
 # ================================
-# Collections - ADVANCED USERS MAY CHANGE
-#
-# SEE THE WIKI PAGE BELOW for information on how to change the name of the "news" section or to create additional collections (site sections):
-#
-# url here
-#
+# Collections
 # ================================
 collections:
   news:
@@ -104,7 +74,7 @@ collections:
 
 
 # ================================
-# Build Settings - DONT CHANGE THESE
+# Build Settings
 # ================================
 markdown: kramdown
 theme: minima

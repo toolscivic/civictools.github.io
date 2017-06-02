@@ -4,8 +4,14 @@ layout: base
 
 <div id="page">
 
-  {% include pager.html %}
+{% assign postcount = site.news | size %}
+{% comment %}
+  {% Count of news articles includes index.html. So check if count is greater than index + 1 article = 2 %}
+{% endcomment %}
 
+{% if postcount > 2 %}
+  {% include pager.html %}
+{% endif %}
   <h1 class="page-title" style="">{{ page.title }}</h1>
 
   <div class="meta-block">
@@ -25,6 +31,8 @@ layout: base
 
   </div>
 
+{% if postcount > 2 %}
   {% include pager.html %}
+{% endif %}
 
 </div>

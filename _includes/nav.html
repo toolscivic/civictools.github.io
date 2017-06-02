@@ -35,10 +35,6 @@
         <li class="nav-item {% if page.navmenu == nav.link %}active{% endif %}"><a class="nav-link nolinkborder" title="{{nav.hover-text}}" href="{{nav.link}}">{{nav.name}}</a></li>
 {% endfor %}
 
-{% if site.submit-enabled == true %}
-        <li class="nav-item-button"><button class="btn btn-primary btn-sm waves-effect waves-light" title="Submit an Event" target="_blank" href="">Submit an Event <i class="fa fa-external-link" aria-hidden="true"></i></button></li>
-{% endif %}
-
         <li class="hidden-sm-down nav-item nav-item-footer">{% include footer.html %}</li>
 
       </ul>
