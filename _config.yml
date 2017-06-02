@@ -17,17 +17,15 @@
 #
 # url
 # ================================
-url: "http://civic.tools"
+url: http://civic.tools
 
-title: "Civic Tools"
+title: Civic Tools
 
-description: "Providing tools for the people!"
+description: Providing tools for the people!
 
-author: "Civic Tools"
+author: Civic Tools
 
-logo-headline: "Civic Tools"
-
-sheet-url: ""
+sheet-url:
 
 
 
@@ -38,7 +36,13 @@ sheet-url: ""
 #
 # url here
 # ================================
-logo-enabled: true
+logo-image-enabled: true
+
+# If not using a logo image ("false" above), provide logo-headline below. Otherwise, leave blank.
+logo-headline: Civic Tools
+
+# The logo-headline uses either the "primary" or "secondary" font family. It is automatically set to the "primary" font family. If you want, you can switch it to the "secondary" font family, just change the value of "logo-headline-switch" to true.
+logo-headline-switch: false
 
 social-links-enabled: true
 
@@ -73,7 +77,7 @@ font-combo: default
 # url here
 #
 # ================================
-stuff: ""
+stuff: 
 
 
 
