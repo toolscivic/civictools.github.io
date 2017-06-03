@@ -1,9 +1,10 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# DO NOT REMOVE this section (or the dashes above and below it). This section tells the site to include the correct theme CSS file.
+# This file processes the theme/font scss files in the
+#     "_sass-jekyll" folder
 ---
 @charset "utf-8";
 
-//@import "minima";
 @import "font_{{site.font-combo}}";
 @import "theme_{{site.theme-color}}";
 @import "application";

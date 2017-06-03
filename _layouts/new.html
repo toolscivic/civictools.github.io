@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div id="page">
+
+{% assign postcount = site.news | size %}
+{% comment %}
+  {% Count of news articles includes index.html. So check if count is greater than index + 1 article = 2 %}
+{% endcomment %}
+
+{% if postcount > 2 %}
+  {% include pager.html %}
+{% endif %}
+  <h1 class="page-title" style="">{{ page.title }}</h1>
+
+  <div class="meta-block">
+
+    <div class="meta-date meta-text">
+      {{ page.date | date: '%b %d, %Y'}}
+    </div>
+
+    {% if site.sharing-enabled == true %}
+      <div class="meta-share sharethis-inline-share-buttons"></div>
+    {% endif %}
+  </div>
+
+  <div class="page-body">
+
+    {{ content }}
+
+  </div>
+
+{% if postcount > 2 %}
+  {% include pager.html %}
+{% endif %}
+
+</div>

@@ -13,17 +13,26 @@
 # ================================
 # Site information
 # ================================
+url: "http://civic.tools"
+
 title: Civic Tools
 
 description: Providing tools for the people!
 
 author: Civic Tools
 
-email: toolscivic@gmail.com
 
-url: "http://civic.tools"
 
-baseurl: ""
+# ================================
+# Enable/Disable Features
+# ================================
+logo-image-enabled: true
+
+social-links-enabled: false
+
+sharing-enabled: false
+
+news-enabled: true
 
 
 
@@ -36,11 +45,34 @@ font-combo: default
 
 
 # ================================
+# Google Analytics
+# ================================
+google_analytics: UA-100420506-1
+
+
+
+# ================================
+# Article Image Helper
+# ================================
+article_image: /assets/images/posts
+
+
+
+# ================================
+# Collections
+# ================================
+collections:
+  news:
+    output: true
+    permalink: /:collection/:slug
+
+
+
+# ================================
 # Build Settings
 # ================================
 markdown: kramdown
 gems:
-  # jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock

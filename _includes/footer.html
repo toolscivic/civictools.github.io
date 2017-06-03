@@ -1,46 +1,20 @@
-<footer class="site-footer">
+<div class="footer">
 
-  <div class="wrapper">
+{% if site.social-links-enabled == true %}
+  <p class="footer-icons">
+    {% for social in site.data.social-links %}
+      <a class="icons nolinkborder" title="{{ social.hover-text }}" href="{{ social.link }}"><i class="fa {{ social.icon }}"></i></a>
+    {% endfor %}
+  </p>
+{% endif %}
+  <p class="copyright">
+    &#169;2017<!--{{ site.time | date: '%Y' }}--> <a class="prim-sec nolinkborder" title="Go to {{site.title}}" href="{{site.url}}">{{site.title}}</a>
+  </p>
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+  <p class="copyright">
+    All rights reserved.
+  </p>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-        </ul>
-      </div>
+  <!--p class="copyright"><a class="prim-sec nolinkborder" href="{{ "/feed.xml" | relative_url }}">subscribe via RSS</a></p-->
 
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-      </div>
-    </div>
-
-  </div>
-
-</footer>
+</div>

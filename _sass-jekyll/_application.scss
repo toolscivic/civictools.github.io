@@ -135,7 +135,7 @@ a.icons:hover {
   width: 100%;
 	border-top: 6px solid $nav-border;
 	/* Padding pushes footer down by height of footer PLUS 20px to create more space between bottom of content-main and mobile footer */
-	padding-bottom: 140px;
+	padding-bottom: 110px;
 }
 
 
@@ -543,11 +543,12 @@ th[aria-sort=descending]:not(.mynosort):after {
 .footer-wrap {
 	position: absolute;
 	bottom: 0;
-	height: 120px;
+	height: 70px;
 	width: 100%;
 }
 .footer {
   display: block;
+	height: 70px;
 	padding: 1rem;
   background-color: $gray-pale;
   width: 100%;
@@ -697,6 +698,7 @@ th[aria-sort=descending]:not(.mynosort):after {
   }
 	.footer {
 		background-color: transparent;
+		padding-top: 1.25rem;
 	}
 }
 

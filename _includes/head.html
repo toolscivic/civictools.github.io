@@ -3,15 +3,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <title>{% if page.title %}{{ site.title | escape }} - {{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{{ site.description | escape }}">
+  <meta name="author" content="{{ site.author }}">
+  <link rel="icon" href="{{ site.baseurl }}/assets/images/favicon.ico">
 
   <link rel="stylesheet" href="{{ "/assets/vendor.min.css" | relative_url }}">
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
-  {% if jekyll.environment == 'production' and site.google_analytics %}
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+  <link rel="alternate" type="application/rss+xml" title="{{site.title | escape}} RSS" href="/feed.xml">
+
+{% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
-  {% endif %}
+{% endif %}
 </head>
