@@ -3,7 +3,11 @@
 {% if site.social-links-enabled == true %}
   <p class="footer-icons">
     {% for social in site.data.social-links %}
+      {% if social.type == "email"  %}
+      <a class="icons nolinkborder" title="{{ social.hover-text }}" href="mailto:{{ social.link }}"><i class="fa {{ social.icon }}"></i></a>
+      {% else  %}
       <a class="icons nolinkborder" title="{{ social.hover-text }}" href="{{ social.link }}"><i class="fa {{ social.icon }}"></i></a>
+      {% endif  %}
     {% endfor %}
   </p>
 {% endif %}

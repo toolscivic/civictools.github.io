@@ -1,11 +1,14 @@
 - link: toolscivic@gmail.com
   hover-text: Email Us
   icon: fa-envelope-square
+  type: email
 
-- link: link-to-twitter-profile-page
+- link: https://twitter.com/civictools
   hover-text: Follow us on Twitter
   icon: fa-twitter-square
+  type: site
 
-- link: link-to-facebook-page
+- link: https://www.facebook.com/civictools/
   hover-text: Follow us on Facebook
   icon: fa-facebook-square
+  type: site
