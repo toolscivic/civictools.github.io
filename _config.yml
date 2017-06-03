@@ -30,8 +30,8 @@ baseurl: ""
 # ================================
 # Appearance
 # ================================
-#theme-color: default
-#font-combo: default
+theme-color: default
+font-combo: default
 
 
 
@@ -39,7 +39,6 @@ baseurl: ""
 # Build Settings
 # ================================
 markdown: kramdown
-theme: minima
 gems:
   # jekyll-feed
 exclude:

@@ -1,11 +1,7 @@
-// TEST IT
-// ==========================================
-// Theme Colors are defined here.
-// ==========================================
+/* ==========================================
+    Theme colors defined in this file.
+  =========================================== */
 
-p {
-  color: red !important;
-}
 /* Main customizable colors */
 $gray-dark: #333;
 $gray-med-muted: #5C5C5C;
@@ -16,12 +12,12 @@ $color-primary: #0F539E;
 $color-secondary: #ED233B; //FF533D;
 
 /*
-  The following settings map the colors above to specific areas of the site.
+    Map colors to specific areas of the site.
 */
 
-// ====================================
-//  Basics
-// ====================================
+/* ==========================================
+    Basics
+  =========================================== */
 $body-text: $gray-dark !default;
 $body-text-muted: $gray-med-muted !default;
 $page-background: #FFF !default;
@@ -30,42 +26,42 @@ $meta-text: $gray-med !default;
 $image-border: $color-primary !default;
 
 
-// ====================================
-//  Used for body copy
-// ====================================
+/* ==========================================
+    Used for body copy
+  =========================================== */
 $link: $color-secondary !default;
 $link-hover: $color-secondary !default;
 $link-border: $color-secondary !default;
 
 
-// ====================================
-// Used for subscribe link
-//  Link state is opaque; hover is solid.
-// ====================================
+/* ==========================================
+    Used for subscribe link
+    Link state is opaque; hover is solid.
+  =========================================== */
 $prim-sec-link: $color-primary !default;
 $prim-sec-link-hover: $color-secondary !default;
 
 
-// ====================================
-//  Used for prev/next links.
-//  Reverse of above.
-//  Link state is opaque; hover is solid.
-// ====================================
+/* ==========================================
+    Used for prev/next links.
+    Reverse of above.
+    Link state is opaque; hover is solid.
+  =========================================== */
 $sec-prim-link: $color-secondary !default;
 $sec-prim-link-hover: $color-primary !default;
 
 
-// ====================================
-//  Used for social icons in navigation.
-//  Link state is opaque; hover is solid.
-// ====================================
+/* ==========================================
+    Used for social icons in navigation.
+    Link state is opaque; hover is solid.
+  =========================================== */
 $icon-link: $color-primary !default;
 $icon-link-hover: $color-primary !default;
 
 
-// ====================================
-//  Navigation - General
-// ====================================
+/* ==========================================
+    Navigation - General
+  =========================================== */
 $nav-background: $color-primary !default;
 $nav-headline: #FFF !default;
 $nav-border: $color-secondary;
@@ -75,9 +71,9 @@ $nav-link-active: $color-primary !default;
 $nav-link-hover: $color-primary !default;
 
 
-// ====================================
-//  Navigation - Mobile-specific
-// ====================================
+/* ==========================================
+    Navigation - Mobile-specific
+  =========================================== */
 $menu-text: $color-primary !default;
 $menu-background: #FFF !default;
 $menu-text-hover: #FFF !default;
@@ -85,9 +81,9 @@ $menu-background-hover: $color-secondary !default;
 $nav-link-border: $color-primary !default;
 
 
-// ====================================
-//  Buttons
-// ====================================
+/* ==========================================
+    Buttons
+  =========================================== */
 $btn-primary-text: #FFF !default;
 $btn-primary-background: $color-secondary !default;
 $btn-primary-text-hover: #FFF !default;
@@ -102,10 +98,14 @@ $btn-outline-border-hover: $color-primary !default;
 $btn-outline-background-hover: $color-primary !default;
 
 
-// ====================================
-//  Tables
-// ====================================
+/* ==========================================
+    Tables
+  =========================================== */
 $table-accent: $color-secondary !default;
 $table-error-background: $gray-med !default;
 $table-disabled-text: $gray-med !default;
 $table-disabled-background: $gray-med !default;
+
+body {
+  color: $color-primary;
+}

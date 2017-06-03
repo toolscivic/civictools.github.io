@@ -6,3 +6,6 @@ _site
 # Local dev only
 /_keep
 _source_assets
+/node_modules
+package.json
+gulpfile.js
